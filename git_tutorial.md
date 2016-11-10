@@ -30,10 +30,12 @@
 | touch | 创建|
 
 NOTE:
+
 1. git status 一般有三种状态:
  - Untracked files：未被跟踪的文件，表示是工作目录新增加的文件
  - Changes not staged for commit：工作目录中修改了文件，但是没有被添加到暂存区
  - Changes to be committed:添加到暂存区的文件，等待提交
+ 
 2. git commit -m "docs(login model): update api document" 是git commit基本格式, 其中docs包含7中类别:
  - feat (新功能)
  - fix (bug修复)
@@ -65,7 +67,7 @@ git pull 分为两步
 |   git checkout -   | 切换到最后使用的branch     |
 | git checkout -b  new_feature_2  |  直接创建新的branch new_feature_2  并且保存到new_feature_2      |
 Example:
-1. git checkout-: 
+-git checkout-: 
 例如你从master切换到new_feature_2 可通过git checkout - 直接切换回master branch上 再次输入git checkout - 再次切换到new_feature_2
 
 #### merge
@@ -92,7 +94,8 @@ NOTE: 一般来说v1.0.0 第一个数字代表大型修改, 第二个数字小�
 |     git stash   |  save uncommited  changes  and dont show it in list      |
 |git stash apply |bring back uncommitd file|
 
-NOTE:当你在使用git stash apply的时候, 会出现错误提示, 可通过解决merge confilct的方法来解决
+NOTE:
+-当你在使用git stash apply的时候, 会出现错误提示, 可通过解决merge confilct的方法来解决
 
 ###push confilct
 一般会出现在两个人修改了同一个file, 并且都push到了远端库上的时候. 当出现时:
@@ -104,8 +107,11 @@ git stauts   --查看是哪个file 在merge的时候出现了conflict
 `=====`
 `>>>STRING`
 区分了你做的更改和其他人做的更改. 此时可以选择
+
 1. 保留自己的更改
+
 2. 保留其他人的更改
+
 3. 合并更改
 
 做出更改以后重新commit push
@@ -138,12 +144,14 @@ git stauts   --查看是哪个file 在merge的时候出现了conflict
 |    git log README.md    |    show commit about README.md    |
 
 NOTE:
+
 1. when u enter log history:
 press q to quit
 f b  navigate by screen
 j k  navigate by line
 /    search for specific
 n N  go forward and backward for search result
+
 2. 都可以合并使用
 example:  git log --oneline --graph
 
