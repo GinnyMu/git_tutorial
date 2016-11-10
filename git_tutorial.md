@@ -67,10 +67,11 @@ git pull 分为两步
 |   git checkout -   | 切换到最后使用的branch     |
 | git checkout -b  new_feature_2  |  直接创建新的branch new_feature_2  并且保存到new_feature_2      |
 Example:
--git checkout-: 
+
+git checkout-: 
 例如你从master切换到new_feature_2 可通过git checkout - 直接切换回master branch上 再次输入git checkout - 再次切换到new_feature_2
 
-#### merge
+####merge
 
 | 命令 | 说明 |
 |--------|--------|
@@ -97,7 +98,7 @@ NOTE: 一般来说v1.0.0 第一个数字代表大型修改, 第二个数字小�
 NOTE:
 -当你在使用git stash apply的时候, 会出现错误提示, 可通过解决merge confilct的方法来解决
 
-###push confilct
+####push confilct
 一般会出现在两个人修改了同一个file, 并且都push到了远端库上的时候. 当出现时:
 git stauts   --查看是哪个file 在merge的时候出现了conflict
 使用编辑器查看出错的file
@@ -156,7 +157,7 @@ n N  go forward and backward for search result
 example:  git log --oneline --graph
 
 
-###git diff
+####git diff
 修改文件以后 可以通过git diff 来查看对文件的修改
 
 | 命令 | 说明 |
